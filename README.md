@@ -18,11 +18,15 @@ double noise(double x, double y)
 These can be used to implement a p5 program that draws polyshapes to the screen, alters the background / foreground colors and uses simplex noise.
 
 ## Examples
-To see the 'Math Noise Wave' example, just run the main method in the Main class.
+To see the 'Math Noise Wave' or 'Boids' examples, do the following:
 
 i.e.
 ```Java
-javac *.java && java Main
+javac *.java
+
+java MathNoise
+or
+java Boids
 ```
 ## Implementation
 Everything is written using the Java standard SDK as well as Java OpenSimplex by Kurt Spencer.

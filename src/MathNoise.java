@@ -1,8 +1,8 @@
-public class Main extends P5 {
+public class MathNoise extends P5 {
 
     private double yoff = 0.0;
     public static void main(String[] args) {
-        new Main();
+        new MathNoise();
     }
 
     @Override
