@@ -1,4 +1,4 @@
-# p5.j
+# p5.java
 Writing a (very) small subset of P5.js in Java. The ['Math Noise Wave' example.](https://p5js.org/examples/examples/Math_Noise_Wave.php) from the p5.js site.
 
 ## Usage
@@ -24,7 +24,7 @@ i.e.
 ```Java
 javac *.java && java Main
 ```
-## implementation
+## Implementation
 Everything is written using the Java standard SDK as well as Java OpenSimplex by Kurt Spencer.
 
 Written using Swing and AWT.
