@@ -23,6 +23,7 @@ public class P5Shape {
             ypoints[i] = (int)vertices.get(i).getY();
         }
 
+        g2.setColor(Color.white);
         g2.fillPolygon(xpoints, ypoints, vertices.size());
     }
 }
