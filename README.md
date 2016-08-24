@@ -24,7 +24,7 @@ i.e.
 ```Java
 javac *.java && java Main
 ```
-## implementation
+## Implementation
 Everything is written using the Java standard SDK as well as Java OpenSimplex by Kurt Spencer.
 
 Written using Swing and AWT.
