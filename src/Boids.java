@@ -1,3 +1,6 @@
+import javafx.scene.shape.TriangleMesh;
+import javafx.scene.shape.VertexFormat;
+
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class Boids extends P5{
@@ -33,7 +36,7 @@ public class Boids extends P5{
             this.acceleration = createVector(0, 0);
             this.velocity = createVector(random(-1, 1), random(-1, 1));
             this.position = createVector(x, y);
-            this.r = 3.0;
+            this.r = 15.0;
             this.maxSpeed = 3.0;
             this.maxForce = 0.05;
         }
@@ -166,14 +169,12 @@ public class Boids extends P5{
         private void render() {
             double theta = this.velocity.heading() + radians(90);
             fill(127);
-            beginShape();
-            vertex(this.position.x - r, this.position.y - r);
-            vertex(this.position.x + r, this.position.y - r);
-            vertex(this.position.x + r, this.position.y + r);
-            vertex(this.position.x - r, this.position.y + r);
-            endShape();
+            circle(this.position.x, this.position.y, r);
         }
+
     }
+
+
 
     private class Flock{
         private ConcurrentLinkedQueue<Boid> boids;

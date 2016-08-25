@@ -68,6 +68,10 @@ public abstract class P5 extends JPanel implements MouseInputListener, Runnable{
         shapes.getFirst().complete = true;
     }
 
+    public void circle(double cx, double cy, double r) {
+        shapes.addFirst(new P5Circle(cx, cy, r));
+    }
+
     public void vertex(double x, double y) {
         shapes.getFirst().addVertex(x, y);
     }
@@ -104,7 +108,7 @@ public abstract class P5 extends JPanel implements MouseInputListener, Runnable{
 
 
             try{
-                Thread.sleep( (lastLoopTime-System.nanoTime() + OPTIMAL_TIME)/1000000);
+                Thread.sleep( Math.abs((lastLoopTime-System.nanoTime() + OPTIMAL_TIME)/1000000));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -196,4 +200,5 @@ public abstract class P5 extends JPanel implements MouseInputListener, Runnable{
     public double radians(double degrees){
         return Math.toRadians(degrees);
     }
+
 }
